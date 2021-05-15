@@ -1,0 +1,13 @@
+
+<div>
+    <h5>{{todo.sno}}</h5>
+    <h5 [ngClass]="{'strike':!todo.active}">{{todo.title}}</h5>
+    <p [ngClass]="{'strike':!todo.active}">{{todo.desc}}</p>
+    <div class="text-center">
+        <input type="checkbox" class="form-check-input" id="exampleCheck1" (click)="oncheckclick(todo)" [checked]="'!todo.active'">
+        <label class="form-check-label" for="exampleCheck1{{i}}">Done</label>
+      </div>
+    <button type="button" class="btn btn-danger" (click)="click(todo)">Delete</button>
+    
+
+</div>
